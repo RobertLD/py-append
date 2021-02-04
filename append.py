@@ -45,7 +45,7 @@ else:
     #Combine files
     with open(outputFile, 'w') as outfile:
         for fname in filenames:
-            outfile.write('\n')
             with open(fname) as infile:
                 for line in infile:
                     outfile.write(line)
+            outfile.write('\n')
